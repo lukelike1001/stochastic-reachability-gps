@@ -1,0 +1,17 @@
+[project]
+name = "stochastic-reachability-gps"
+version = "0.1.0"
+description = "Reproduction of Mina et al. (2023), stochastic reachability-based GPS spoofing detection with Chimera"
+requires-python = ">=3.10"
+dependencies = [
+    "numpy>=1.24",
+    "scipy>=1.10",
+    "matplotlib>=3.7",
+]
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["core", "reproduce"]
